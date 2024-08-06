@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 10vh); /* Adjust height to account for the navbar */
+  background-color: #f0f0f0;
+}
+
+.signup-form {
+  background: white;
+  padding: 40px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 30px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.signup-form h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.signup-form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signup-form button:hover {
+  background-color: #555;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-link p {
+  color: #333;
+}
+
+.login-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}

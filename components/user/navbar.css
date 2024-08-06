@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* General styles for the navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Adjusted to space-between for better control */
+  align-items: center;
+  height: 10vh;
+  box-shadow: rgba(50, 50, 93, 0.23) 0px 30px 30px -20px;
+  padding: 0 20px; /* Added padding for better spacing */
+}
+
+/* Logo styling */
+.logo {
+  font-size: 30px;
+}
+
+/* Adjust the logo image */
+.logo-image {
+  width: 150px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+}
+
+/* Navbar links */
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; /* Align items vertically */
+  width: 75%;
+}
+
+.nav-links li, .nav-links .dropdown {
+  color: black;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: white;
+  color: black;
+  padding: 20px 20px; /* Adjust padding to match other links */
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white; /* Changed background color to white */
+  min-width: 160px;
+  box-shadow: rgba(50, 50, 93, 0.23) 0px 8px 16px 0px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white; /* Changed text color to white */
+  background-color: blue; /* Changed background color to blue */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: darkblue; /* Change hover background color as needed */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #f1f1f1;
+}
+
+/* Mobile menu icon */
+.mobile-menu-icon {
+  display: none;
+}
+
+button {
+  border: none;
+  text-decoration: none;
+  font-size: 20px;
+  background: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .logo {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 35px;
+  }
+  
+  .logo-image {
+    width: 100px; /* Smaller logo size for mobile */
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links-mobile {
+    position: absolute;
+    display: block;
+    list-style: none;
+    box-shadow: rgba(50, 50, 93, 0.23) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    left: 0;
+    top: 10%;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    background-color: white;
+  }
+
+  .nav-links-mobile li {
+    padding: 32px;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+  }
+
+  .mobile-menu-icon {
+    position: absolute;
+    display: block;
+    right: 20px;
+  }
+
+  .hero h1 {
+    font-size: 50px;
+  }
+}
